@@ -1,0 +1,32 @@
+{
+    "properties":{
+      "create-date":{
+        "format":"basic_date_time",
+        "type":"date"
+      },
+      "price":{
+        "type":"double"
+      },
+      "name":{
+        "analyzer":"ik_max_word_pinyin",
+        "type":"text"
+      },
+      "is-delete":{
+        "type":"integer"
+      },
+      "id":{
+        "type":"text"
+      },
+      "brand":{
+        "type":"text"
+      },
+      "desc":{
+        "type":"text"
+      },
+      "searchWords": {
+        "search_analyzer": "ik_max_word_pinyin",
+        "analyzer": "ik_max_word_pinyin",
+        "type": "text"
+      }
+    }
+}
